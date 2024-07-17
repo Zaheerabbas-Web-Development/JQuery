@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <title>JQuery</title>
+  </head>
+  <body>
+    <h1 class="heading">Zaheer Abbas</h1>
+    <p id="Paragraph">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro culpa,
+      quos quaerat eveniet possimus iusto temporibus alias, eum vel quo debitis
+      doloremque, tempora minima? Magnam possimus beatae laboriosam qui amet!
+    </p>
+
+    <h3>Hi JQuery</h3>
+    <button class="btn">Submit</button>
+
+    <script>
+      $(document).ready(function () {
+        // Your code here
+
+        $(".heading").html("Hi My name is Zaheer abbas and i from swabi");
+        $("#Paragraph").html(
+          "Hi My name is Zaheer abbas and i from  swabi. i studied in BS Computer Sceince"
+        );
+
+        $("h3").click(function () {
+          alert("Hi I am Zaheer Abbas");
+        });
+
+        $(".btn").click(function () {
+          alert("Your form is submited");
+        });
+      });
+    </script>
+  </body>
+</html>
